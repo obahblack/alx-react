@@ -1,0 +1,27 @@
+.App {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid rgb(239, 55, 55);
+}
+.App-header h1 {
+  color: rgb(239, 55, 55);
+}
+
+.App-body {
+  display: flex;
+  padding: 50px 0px 0px 50px;
+}
+
+.App-body p {
+  font-size: 20px;
+}
+
+.App-footer {
+  text-align: center;
+  border-top: 2px solid rgb(239, 55, 55);
+}
