@@ -1,6 +1,6 @@
 import React from "react";
 import App from "./App";
-import { shallow } from "enzyme";
+import { shallow, render } from "enzyme";
 
 describe("App test", () => {
   test("App should not crash", () => {
@@ -13,12 +13,12 @@ describe("App test", () => {
   });
 
   test("should verify App renders a div with class App-body ", () => {
-    const wrapper = shallow(<App />); //render/shallow can be used
+    const wrapper = render(<App />); //render/shallow can be used
     expect(wrapper.find(".App-body").exists()).toBe(true);
   });
 
   test("should  verify App renders a div with class App-footer", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = render(<App />);
     expect(wrapper.find(".App-footer").exists()).toBe(true);
   });
 });
