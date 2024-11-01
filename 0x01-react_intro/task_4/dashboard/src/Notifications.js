@@ -19,10 +19,10 @@ const /* A component that will render a list of notifications. */
         </button>
         <p>Here is the list of notifications</p>
         <ul>
-          <li data="default">New course available</li>
-          <li data="urgent">New resume available</li>
+          <li data-priority="default">New course available</li>
+          <li data-priority="urgent">New resume available</li>
           <li
-            data="urgent"
+            data-priority="urgent"
             dangerouslySetInnerHTML={{ __html: getLatestNotification() }}
           ></li>
         </ul>
