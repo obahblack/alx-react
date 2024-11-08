@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App/App";
 import Notifications from "./Notifications/Notifications";
 
-ReactDOM.render(
+ReactDOM.ren(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
